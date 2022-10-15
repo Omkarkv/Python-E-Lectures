@@ -14,16 +14,15 @@ min_answer = None
 max_answer = None
 
 for val in eigens:
-    
 
     if np.abs(val) < min_abs:
         min_answer = np.real(val)
         min_abs = np.abs(val)
-        # print(min_answer)
+
     if np.abs(val) > max_abs:
         max_answer = np.real(val)
         max_abs = np.abs(val)
 
-print(eigens)
-print(min_answer, max_answer)
-print([np.abs(val) for val in eigens])
+# print(eigens)
+# print(min_answer, max_answer)
+# print([np.abs(val) for val in eigens])
